@@ -1,4 +1,4 @@
-## YouTube Channel Engagement Analysis of Brazilian League Teams
+# YouTube Channel Engagement Analysis of Brazilian League Teams
 
 ## About
 
@@ -6,15 +6,15 @@ This project analyzes YouTube engagement for the 20 teams in Brazil's main footb
 
 
 
-### Objectives
+## Objectives
 - Extract the latest 50 videos from each team's YouTube channel.
 - Store the extracted data in SSMS.
 - Analyze the data to compare engagement metrics.
 - Visualize the results using Power BI.
 
-### Project Overview
+## Project Overview
 
-#### 1. Data Extraction
+### 1. Data Extraction
 We use Python scripts to interact with the YouTube API and extract data. Below are the steps to extract the latest 50 videos for each team.
 
 **Python Code for Data Extraction:**
@@ -45,15 +45,15 @@ def get_videos(channel_id, api_key):
 
 ```
 
-#### 2. Data Storage
+### 2. Data Storage
 Store the extracted data in SQL Server Management Studio (SSMS) for further analysis. 
 
 
-#### 3. Data Analysis
+### 3. Data Analysis
 Perform data analysis using SQL queries within SSMS to retrieve insights. For example, calculate average views, likes, and comments for each channel.
 
 
-##### Questions to be Answered
+#### Questions to be Answered
 
 1. **Which team has the highest engagement with likes on their videos?**
 2. **Which team has the highest engagement with comments on their videos?**
@@ -61,25 +61,25 @@ Perform data analysis using SQL queries within SSMS to retrieve insights. For ex
 4. **Measure the average number of likes, views, and comments per video for each team.**
 5. **How do engagement metrics vary over time for each team?**
 
-##### Key Performance Indicators (KPIs)
+#### Key Performance Indicators (KPIs)
 
-####### Average Views per Video
+##### Average Views per Video
 - **Formula:** Total Views / Number of Videos
 - **Description:** Indicates the overall popularity and reach of the videos.
 
-### Average Likes per Video
+##### Average Likes per Video
 - **Formula:** Total Likes / Number of Videos
 - **Description:** Reflects the audience's approval and satisfaction with the content.
 
-### Average Comments per Video
+##### Average Comments per Video
 - **Formula:** Total Comments / Number of Videos
 - **Description:** Shows the level of interaction and engagement from the audience.
 
-### Engagement Rate per Video
+##### Engagement Rate per Video
 - **Formula:** (Total Likes + Total Comments) / Total Views * 100%
 - **Description:** Provides a comprehensive measure of how actively the audience is engaging with the videos.
 
-### Top 10 Videos by Views, Likes, and Comments
+##### Top 10 Videos by Views, Likes, and Comments
 - **Description:** Highlight the most successful content based on different engagement metrics.
 
 
@@ -96,17 +96,17 @@ GROUP BY
     channel_id
 ```
 
-#### 4. Data Visualization
+### 4. Data Visualization
 Visualize the analyzed data using Power BI. Connect Power BI to the SSMS database and create interactive dashboards to showcase the insights.
 
-### Requirements
+## Requirements
 - Python 3.x
 - YouTube Data API v3
 - SQL Server Management Studio (SSMS)
 - Power BI
 - Libraries: `google-api-python-client`, `pyodbc`
 
-### Installation
+## Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/YouTubeEngagementAnalysis.git
@@ -118,10 +118,10 @@ Visualize the analyzed data using Power BI. Connect Power BI to the SSMS databas
 3. Set up your YouTube Data API key and SSMS credentials in the `config.py` file.
 
 
-### Conclusion
+## Conclusion
 This project demonstrates the process of extracting, storing, analyzing, and visualizing YouTube engagement data for Brazilian league teams. By leveraging Python, SSMS, and Power BI, we can gain valuable insights into the YouTube performance of these teams.
 
-### Contributions
+## Contributions
 Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss any changes or improvements.
 
 
