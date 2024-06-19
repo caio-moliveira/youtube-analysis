@@ -71,7 +71,6 @@ Perform data analysis using SQL queries within SSMS to retrieve insights. For ex
 2. **Which team has the highest engagement with comments on their videos?**
 3. **What are the top-performing videos in terms of views, likes, and comments?**
 4. **Measure the average number of likes, views, and comments per video for each team.**
-5. **How do engagement metrics vary over time for each team?**
 
 #### Key Performance Indicators (KPIs)
 
