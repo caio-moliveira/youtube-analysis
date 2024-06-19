@@ -22,26 +22,38 @@ We use Python scripts to interact with the YouTube API and extract data. Below a
 import os
 import googleapiclient.discovery
 
-def get_videos(channel_id, api_key):
-    youtube = googleapiclient.discovery.build('youtube', 'v3', developerKey=api_key)
+youTubeApiKey = "youTubeApiKey"
+youtube=build('youtube','v3', developerKey=youTubeApiKey)
 
-    request = youtube.search().list(
-        part="snippet",
-        channelId=channel_id,
-        maxResults=50,
-        order="date"
-    )
-    response = request.execute()
-    
-    videos = []
-    for item in response['items']:
-        video_data = {
-            'video_id': item['id']['videoId'],
-            'title': item['snippet']['title'],
-            'published_at': item['snippet']['publishedAt']
-        }
-        videos.append(video_data)
-    return videos
+channel_handle = 'channelName'
+search_response = youtube.search().list(
+    q=channel_handle,
+    type='channel',
+    part='id,snippet',
+    maxResults=1
+).execute()
+
+if 'items' in search_response and len(search_response['items']) > 0:
+    channel_id = search_response['items'][0]['snippet']['channelId']
+    print(f"Channel ID: {channel_id}")
+
+    try:
+        # Get the uploads playlist ID for the channel
+        res = youtube.channels().list(part='contentDetails', id=channel_id).execute()
+        if 'items' in res and len(res['items']) > 0:
+            uploads_playlist_id = res['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+        else:
+            print("Error: Channel not found or no content details available.")
+            uploads_playlist_id = None
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        uploads_playlist_id = None
+
+    if uploads_playlist_id:
+        # Initialize variables
+        playlist_videos = []
+        nextPage_token = None
+
 
 ```
 
@@ -89,9 +101,9 @@ SELECT
     channel_id,
     AVG(views) AS avg_views,
     AVG(likes) AS avg_likes,
-    AVG(comments) AS avg_comments
+    AVG(comment) AS avg_comments
 FROM 
-    YouTubeVideos
+    brasileiraoA
 GROUP BY 
     channel_id
 ```
