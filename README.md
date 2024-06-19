@@ -1,6 +1,10 @@
 ## YouTube Channel Engagement Analysis of Brazilian League Teams
 
-This project aims to extract and analyze the latest 50 videos from each of the YouTube channels of the 20 teams in the main league in Brazil. By storing and analyzing this data, we seek to compare their engagement metrics and gain insights into their YouTube presence. The data is stored in SQL Server Management Studio (SSMS) and analyzed to retrieve actionable insights, which are then visualized using Power BI.
+## About
+
+This project analyzes YouTube engagement for the 20 teams in Brazil's main football league. By extracting the latest 50 videos from each team's official YouTube channel, we store the data in SQL Server Management Studio (SSMS) and perform detailed analysis to compare their engagement metrics. The insights gained are visualized through dynamic dashboards in Power BI. Our goal is to understand which teams and video content types generate the most engagement, identify trends over time, and provide actionable recommendations for enhancing YouTube presence. This fusion of data extraction, storage, and visualization showcases the power of integrating multiple tools to derive meaningful insights from social media data.
+
+
 
 ### Objectives
 - Extract the latest 50 videos from each team's YouTube channel.
