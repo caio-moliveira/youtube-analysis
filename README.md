@@ -52,43 +52,35 @@ Store the extracted data in SQL Server Management Studio (SSMS) for further anal
 #### 3. Data Analysis
 Perform data analysis using SQL queries within SSMS to retrieve insights. For example, calculate average views, likes, and comments for each channel.
 
+
 ##### Questions to be Answered
 
-1. **Which team has the highest average engagement on their videos?**
-   - Measure the average number of likes, views, and comments per video for each team.
-
-2. **What are the top-performing videos in terms of views, likes, and comments?**
-   - Identify the top 10 videos for each metric.
-
-3. **How do engagement metrics vary over time for each team?**
-   - Analyze trends in likes, views, and comments over different periods (e.g., monthly, quarterly).
-
-4. **Which video content types or topics generate the most engagement?**
-   - Use video titles and descriptions to categorize content and compare engagement metrics across categories.
-
-5. **Is there a correlation between the publishing time and the engagement received?**
-   - Analyze if videos published at specific times of the day or week have higher engagement.
+1. **Which team has the highest engagement with likes on their videos?**
+2. **Which team has the highest engagement with comments on their videos?**
+3. **What are the top-performing videos in terms of views, likes, and comments?**
+4. **Measure the average number of likes, views, and comments per video for each team.**
+5. **How do engagement metrics vary over time for each team?**
 
 ##### Key Performance Indicators (KPIs)
 
-1. **Average Views per Video**
-   - Formula: Total Views / Number of Videos
-   - Indicates the overall popularity and reach of the videos.
+####### Average Views per Video
+- **Formula:** Total Views / Number of Videos
+- **Description:** Indicates the overall popularity and reach of the videos.
 
-2. **Average Likes per Video**
-   - Formula: Total Likes / Number of Videos
-   - Reflects the audience's approval and satisfaction with the content.
+### Average Likes per Video
+- **Formula:** Total Likes / Number of Videos
+- **Description:** Reflects the audience's approval and satisfaction with the content.
 
-3. **Average Comments per Video**
-   - Formula: Total Comments / Number of Videos
-   - Shows the level of interaction and engagement from the audience.
+### Average Comments per Video
+- **Formula:** Total Comments / Number of Videos
+- **Description:** Shows the level of interaction and engagement from the audience.
 
-4. **Engagement Rate per Video**
-   - Formula: (Total Likes + Total Comments) / Total Views * 100%
-   - Provides a comprehensive measure of how actively the audience is engaging with the videos.
+### Engagement Rate per Video
+- **Formula:** (Total Likes + Total Comments) / Total Views * 100%
+- **Description:** Provides a comprehensive measure of how actively the audience is engaging with the videos.
 
-5. **Top 10 Videos by Views, Likes, and Comments**
-   - Highlight the most successful content based on different engagement metrics.
+### Top 10 Videos by Views, Likes, and Comments
+- **Description:** Highlight the most successful content based on different engagement metrics.
 
 
 **Example SQL Query for Analysis:**
