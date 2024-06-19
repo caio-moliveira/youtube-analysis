@@ -1,16 +1,19 @@
 /*
-
-Engagement Rate by Team
-
+4. Measure the average number of likes, views, and comments per video for each team.
 */
 
+SELECT 
+    team_name, 
+    AVG(likes) AS average_likes, 
+    AVG(views) AS average_views, 
+    AVG(comment) AS average_comments
+FROM 
+    brasileiraoA
+GROUP BY 
+    team_name
+ORDER BY 
+    average_views DESC, average_likes, average_comments;
 
-SELECT team_name, 
-       ROUND(AVG(CAST(likes AS FLOAT)) / AVG(CAST(views AS FLOAT)) * 100, 2) AS average_likes_per_view,
-       ROUND(AVG(CAST(comment AS FLOAT)) / AVG(CAST(views AS FLOAT)) * 100, 2) AS average_comments_per_view
-FROM teams
-GROUP BY team_name
-ORDER BY average_likes_per_view DESC, average_comments_per_view DESC;
 
 
 

@@ -1,11 +1,38 @@
 /*
-
-Total Comments and Average Comments by Team
-
+3. What are the top-performing videos in terms of views, likes, and comments?
 */
 
+-- Top 10 Videos by Views
+SELECT TOP 10 
+    video_id, 
+    team_name, 
+    views
+FROM 
+    brasileiraoA
+ORDER BY 
+    views DESC;
 
-SELECT team_name, SUM(comment) AS total_comment, AVG(comment) AS avg_comment, COUNT(team_name) AS numb_videos
-FROM teams
-GROUP BY team_name
-ORDER BY total_comment DESC, avg_comment;
+-- Top 10 Videos by Likes
+SELECT TOP 10
+    video_id, 
+    team_name, 
+    likes
+FROM 
+    brasileiraoA
+ORDER BY 
+    likes DESC;
+
+
+-- Top 10 Videos by Comments
+SELECT TOP 10
+    video_id, 
+    team_name, 
+    comment
+FROM 
+    brasileiraoA
+ORDER BY 
+    comment DESC;
+
+
+
+
