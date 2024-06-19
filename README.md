@@ -116,18 +116,7 @@ Visualize the analyzed data using Power BI. Connect Power BI to the SSMS databas
 - YouTube Data API v3
 - SQL Server Management Studio (SSMS)
 - Power BI
-- Libraries: `google-api-python-client`, `pyodbc`
-
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/YouTubeEngagementAnalysis.git
-   ```
-2. Install the required Python libraries:
-   ```bash
-   pip install google-api-python-client pyodbc
-   ```
-3. Set up your YouTube Data API key and SSMS credentials in the `config.py` file.
+- Libraries: `google-api-python-client`
 
 
 ## Conclusion
