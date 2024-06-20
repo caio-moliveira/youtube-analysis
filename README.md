@@ -1,7 +1,3 @@
-Here is a reorganized and more structured README file for your project, formatted in Markdown to enhance readability and professionalism.
-
----
-
 # YouTube Channel Engagement Analysis of Brazilian League Teams
 
 ## Project Overview
