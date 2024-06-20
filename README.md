@@ -13,7 +13,7 @@ This project analyzes YouTube engagement for the 20 teams in Brazil's main footb
 
 ## Project Steps
 
-### 1. Data Extraction
+## 1. Data Extraction
 
 Python scripts are used to interact with the YouTube API and extract data. Below are the steps to extract the latest 50 videos for each team.
 
@@ -59,11 +59,11 @@ if 'items' in search_response and len(search_response['items']) > 0:
 
 *Note: The full Python script is provided in the attached file `channel-extract.ipynb`.*
 
-### 2. Data Storage
+## 2. Data Storage
 
 The extracted data is moved to a CSV file and then imported into SQL Server Management Studio (SSMS) for further analysis.
 
-### 3. Data Analysis
+## 3. Data Analysis
 
 #### Highest Engagement
 
@@ -216,7 +216,7 @@ ORDER BY
   - *Description:* Highlight the most successful content based on different engagement metrics.
 
 
-### 4. Data Visualization
+## 4. Data Visualization
 
 The analyzed data is visualized using Power BI. By connecting Power BI to the SSMS database, interactive dashboards are created to showcase the insights.
 
