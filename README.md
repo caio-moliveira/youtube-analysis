@@ -4,8 +4,7 @@
 
 This project analyzes YouTube engagement for the 20 teams in Brazil's main football league. By extracting the latest 50 videos from each team's official YouTube channel, the data is stored in SQL Server Management Studio (SSMS) and analyzed to compare engagement metrics. The insights gained are visualized through dynamic dashboards in Power BI. The goal is to understand which teams and video content types generate the most engagement, identify trends over time, and provide actionable recommendations for enhancing YouTube presence.
 
-
-![Alt text](file:///C:/Users/35383/AppData/Local/Temp/Power%20BI%20Desktop/print-job-4e366167-f41c-4ed3-889f-3eca6b5d6a39/dashboard.pdf)
+![image](https://github.com/caio-moliveira/youtube-analysis/assets/150807759/23e5991a-bd60-4c6b-a603-bc19f3fe9101)
 
 
 ## Objectives
