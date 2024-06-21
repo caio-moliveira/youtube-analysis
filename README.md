@@ -238,7 +238,3 @@ This project demonstrates the process of extracting, storing, analyzing, and vis
 ## Contributions
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss any changes or improvements.
-
----
-
-Feel free to adjust any sections as necessary to better fit your specific project details or preferences.
